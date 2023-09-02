@@ -22,11 +22,11 @@ const Experience = () => {
       <directionalLight position={[10, 10, 5]} intensity={2} />
       <mesh ref={boxRef} position={[-2,0,0]}>  
         <boxGeometry args={[1,1,1]} />
-        <meshStandardMaterial   color="aqua"/>      
+        <meshStandardMaterial   color="green"/>      
       </mesh>
       <mesh ref={sphereRef} position={[0,0,0]}>
         <sphereGeometry args={[1, 32, 32]} />
-        <meshLambertMaterial color="yellow" wireframe/>
+        <meshLambertMaterial color="yellow" />
       </mesh>
     </>
   )
