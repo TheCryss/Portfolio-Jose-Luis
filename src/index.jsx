@@ -11,11 +11,12 @@ const root = createRoot(document.getElementById('root'));
 //extend({ Info })
 root.render(
   <>
+
   <div className="header">
     <Info  name="Jose Luis" biography="3D Web Developer"/>
   </div>
   
-  <Canvas camera={{position:[2,0,5]}}>
+  <Canvas camera={{position:[0,0,5]}} style={{ background: "black" }} >
       <Experience/>
   </Canvas>
 
