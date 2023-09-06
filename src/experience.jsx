@@ -19,8 +19,8 @@ const Experience = () => {
     sphereRef.current.rotation.y += 1 * delta;
     //coneRef.current.rotation.x += 1 * delta
     coneRef.current.rotation.y += 1 * delta
-    //torusRef.current.rotation.x += 1 * delta
-    //torusRef.current.rotation.y += 1 * delta
+    torusRef.current.rotation.x += 1 * delta
+    torusRef.current.rotation.y += 1 * delta
     sphereRef.current.position.y = Math.sin(clock.getElapsedTime()*2)*2; // Adjust the amplitude (1.5 in this example)
     sphereRef.current.position.x = Math.cos(clock.getElapsedTime()*2)*2; 
 
@@ -45,9 +45,9 @@ const Experience = () => {
         <coneGeometry args={[1, 1.5, 32]} />
         <meshLambertMaterial color="red" />
       </mesh>
-      <mesh ref={torusRef} position={[8,0,0]}>
-        <torusGeometry args={[1, 0.4, 12,48]} />
-        <meshPhongMaterial color="gray" />
+      <mesh ref={torusRef} position={[1,0,0]}>
+        <torusGeometry args={[8, 1, 12,48]} />
+        <meshMatcapMaterial color="pink" />
       </mesh>
     </>
   )
