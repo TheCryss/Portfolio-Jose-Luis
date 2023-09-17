@@ -16,8 +16,9 @@ root.render(
     <Info  name="Jose Luis" biography="3D Web Developer"/>
   </div>
   
-  <Canvas camera={{position:[0,0,5]}} style={{ background: "black" }} >
+  <Canvas camera={{position:[0,3,8]}} style={{ background: "black   " }} shadows >
       <Experience/>
+      
   </Canvas>
 
   </>
