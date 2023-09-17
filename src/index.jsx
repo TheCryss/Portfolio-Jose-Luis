@@ -13,7 +13,7 @@ root.render(
   <>
 
   <div className="header">
-    <Info  name="Jose Luis" biography="3D Web Developer"/>
+    <Info  name="Jose Luis Hincapié Bucheli" biography="3D Web Developer"/>
   </div>
   
   <Canvas camera={{position:[0,3,8]}} style={{ background: "black   " }} shadows >

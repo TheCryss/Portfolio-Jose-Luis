@@ -18,3 +18,19 @@ canvas{
     margin-left: 2em;
     color: black;
 }
+
+.card{
+    background-color: rgb(54, 148, 148);
+    margin: 2rem;
+    padding-inline: 3em;
+    padding-top: 2px;
+    padding-bottom: 20px;
+    border-radius: 1em;
+    color: whitesmoke;
+    border: white 2px solid;
+}
+
+.card h3 {
+    text-decoration: overline;
+    color: white;
+  }

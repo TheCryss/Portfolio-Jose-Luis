@@ -6,7 +6,7 @@ import Treadmill from "./world/Treadmill";
 import ShelfWithItems from "./shelf_with_objects";
 import Floor from "./world/Floor";
 import Lights from "./world/Lights";
-
+import Environments from "./world/Environment";
 const Experience = () => {
 
 
@@ -19,8 +19,9 @@ const Experience = () => {
         <Cat />
         <Treadmill position={[-3.5, -1, 6]} />
       </group>
+      <Environments/>  
       <ShelfWithItems  />
-      <Floor></Floor>
+      {/* <Floor></Floor> */}
       
     </>
   )

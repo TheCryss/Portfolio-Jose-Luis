@@ -2,8 +2,8 @@ import React from 'react'
 import {Text } from "@react-three/drei";
 const Info = ({name,biography}) => {
   return (
-    <div>
-      <h2>{name}</h2>
+    <div className='card'>
+      <h3 >{name}</h3>
       {biography}
     </div>
   )
