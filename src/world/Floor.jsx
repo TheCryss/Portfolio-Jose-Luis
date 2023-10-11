@@ -12,7 +12,7 @@ const Floor = () => {
   return (
     <mesh position-y={-.4} rotation-x={-Math.PI / 2} receiveShadow>
     <planeGeometry attach="geometry" args={[32, 32]} />
-    <meshStandardMaterial attach="material" color={"#2596be"} roughness={0} />
+    <meshStandardMaterial attach="material" color={"#2596be"} />
 
 </mesh>
   )

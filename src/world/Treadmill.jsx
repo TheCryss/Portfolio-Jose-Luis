@@ -18,13 +18,11 @@ const Treadmill = (props) => {
       >
         <mesh 
           castShadow
-          
           geometry={nodes.Object_4.geometry}
           material={materials["Material.001"]}
         />
         <mesh 
-          castShadow
-          
+          castShadow          
           geometry={nodes.Object_5.geometry}
           material={materials["Material.002"]}
         />

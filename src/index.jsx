@@ -4,7 +4,7 @@ import "./styles.css"
 import { Canvas } from "@react-three/fiber";
 import Info from "./info";
 import { extend } from '@react-three/fiber'
-
+import { BakeShadows } from "@react-three/drei";
 
 
 const root = createRoot(document.getElementById('root'));
@@ -18,7 +18,7 @@ root.render(
   
   <Canvas camera={{position:[0,3,8]}} style={{ background: "black   " }} shadows >
       <Experience/>
-      
+      <BakeShadows/>
   </Canvas>
 
   </>

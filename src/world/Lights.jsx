@@ -8,7 +8,7 @@ const Lights = () => {
     const directionalLightRef = useRef();
     const SpotLightRef = useRef();
     // useHelper(SpotLightRef,SpotLightHelper)
-    // useHelper(directionalLightRef, DirectionalLightHelper);
+    useHelper(directionalLightRef, DirectionalLightHelper);
     return (
         <>
             <ambientLight intensity={0.2} color={0xfff} />
@@ -18,7 +18,8 @@ const Lights = () => {
             intensity={100}
             color={"white"}
             penumbra={1}
-  			 distance={80}/>
+            castShadow
+            distance={80}/>
         </>
     )
 }

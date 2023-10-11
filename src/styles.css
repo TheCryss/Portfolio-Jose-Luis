@@ -1,36 +1,45 @@
 body,
-#root{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: ivory;
+#root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: ivory;
 }
-canvas{
-    touch-action: none;
-}
-
-.header{
-    text-align: center;
-    position: absolute;
-    z-index: 1;
-    margin-left: 2em;
-    color: black;
+canvas {
+  touch-action: none;
 }
 
-.card{
-    background-color: rgb(54, 148, 148);
-    margin: 2rem;
-    padding-inline: 3em;
-    padding-top: 2px;
-    padding-bottom: 20px;
-    border-radius: 1em;
-    color: whitesmoke;
-    border: white 2px solid;
+.header {
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  margin-left: 2em;
+  color: black;
+}
+
+.card {
+  background-color: rgb(54, 148, 148);
+  margin: 2rem;
+  padding-inline: 3em;
+  padding-top: 2px;
+  padding-bottom: 20px;
+  border-radius: 1em;
+  color: whitesmoke;
+  border: white 2px solid;
+  user-select: none;
 }
 
 .card h3 {
-    text-decoration: overline;
-    color: white;
-  }
+  text-decoration: overline;
+  color: white;
+}
+
+.click-me-text {
+  background: #00000088;
+  color: white;
+  padding: 1rem;
+  border-radius: 2rem;
+  user-select: none;
+}

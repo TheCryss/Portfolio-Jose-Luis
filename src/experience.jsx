@@ -7,6 +7,8 @@ import ShelfWithItems from "./shelf_with_objects";
 import Floor from "./world/Floor";
 import Lights from "./world/Lights";
 import Environments from "./world/Environment";
+import Sign from "./world/Sign";
+import { ClickMe } from "./world/ClickMe";
 const Experience = () => {
 
 
@@ -21,7 +23,10 @@ const Experience = () => {
       </group>
       <Environments/>  
       <ShelfWithItems  />
-      {/* <Floor></Floor> */}
+      <Floor></Floor>
+      <Sign position={[5,-.3,-5]} scale={0.6}>
+        <ClickMe/>
+      </Sign>
       
     </>
   )
