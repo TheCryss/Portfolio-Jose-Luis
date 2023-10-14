@@ -1,7 +1,7 @@
 import React from 'react'
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
-import Shelf from './world/Shelf';
+import Shelf from './Shelf';
 const ShelfWithItems = () => {
 
 

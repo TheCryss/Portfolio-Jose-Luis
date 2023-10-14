@@ -1,5 +1,4 @@
 import { Html, Text,Float,Text3D } from '@react-three/drei'
-import '../styles.css'
 import React from 'react'
 export const ClickMe = (props) => {
   return (
