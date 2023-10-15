@@ -2,7 +2,8 @@ import React from 'react'
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 import Shelf from './Shelf';
-const ShelfWithItems = () => {
+import { RigidBody } from '@react-three/rapier';
+const ShelfWithItems = (props) => {
 
 
     const boxRef = useRef(null);
@@ -22,6 +23,8 @@ const ShelfWithItems = () => {
     })
     return (
         <>
+        <RigidBody colliders={"cuboid"} type='fixed'>
+        <group {...props}>
         <mesh position={[-5,0,-5]} castShadow>
         <Shelf scale={2} position={[0,-0.385,0]} rotation-y={Math.PI/2}/> 
         
@@ -42,7 +45,10 @@ const ShelfWithItems = () => {
                 <meshMatcapMaterial color="violet" />
             </mesh>
         </mesh>
+        </group>
+        </RigidBody>
         </>
+        
     )
 }
 
