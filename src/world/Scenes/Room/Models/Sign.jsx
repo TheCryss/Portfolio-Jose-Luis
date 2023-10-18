@@ -1,4 +1,5 @@
 import { useGLTF } from "@react-three/drei";
+import {RigidBody} from '@react-three/rapier'
 
 const handleSign = () => {
   window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D');
@@ -7,6 +8,7 @@ const handleSign = () => {
 const Sign = (props) => {
   const { nodes, materials } = useGLTF("/assets/models/sign/sign.glb");
   return (
+    <RigidBody type="fixed">
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh
@@ -19,6 +21,7 @@ const Sign = (props) => {
       </group>
       {props.children}
     </group>  
+    </RigidBody>
   );
 };
 

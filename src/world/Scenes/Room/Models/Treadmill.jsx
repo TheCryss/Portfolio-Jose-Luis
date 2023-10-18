@@ -10,7 +10,7 @@ const Treadmill = (props) => {
     const { nodes, materials } = useGLTF("/assets/models/treadmill/treadmill.glb");
     const treadMillRef = useRef()
     return (
-      <RigidBody colliders={"hull"}>
+      // <RigidBody colliders={"hull"}>
     <group {...props} dispose={null}  >
       <group 
         position={[3.5, 0.495, -6]}
@@ -30,7 +30,7 @@ const Treadmill = (props) => {
         />
       </group>
     </group>
-    </RigidBody>
+    // </RigidBody>
   )
 }
 

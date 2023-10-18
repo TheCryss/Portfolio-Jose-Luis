@@ -5,7 +5,7 @@ import { BakeShadows } from "@react-three/drei";
 import Info from "./Info/info"
 const App = () => {
     const cameraSettings = {
-        position: [0, 3, 8]
+        position: [0, 4, 9]
         // fov: 60
     }
 
