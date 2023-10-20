@@ -2,6 +2,7 @@ import { Canvas } from "@react-three/fiber"
 import Experience from "./world/experience"
 import { BakeShadows } from "@react-three/drei";
 
+
 import Info from "./Info/info"
 const App = () => {
     const cameraSettings = {
@@ -16,7 +17,7 @@ const App = () => {
             </div>
             <Canvas shadows camera={cameraSettings} >
                 <Experience/>
-                <BakeShadows/>
+
             </Canvas>
 
         </>

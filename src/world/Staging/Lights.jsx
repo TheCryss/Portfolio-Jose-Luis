@@ -8,11 +8,11 @@ const Lights = () => {
     const directionalLightRef = useRef();
     const SpotLightRef = useRef();
     // useHelper(SpotLightRef,SpotLightHelper)
-    useHelper(directionalLightRef, DirectionalLightHelper);
+    //useHelper(directionalLightRef, DirectionalLightHelper);
     return (
         <>
             <ambientLight intensity={0.2} color={0xfff} />
-            <directionalLight ref={directionalLightRef} position={[2, 16, 20]} intensity={1.2} castShadow />
+            <directionalLight ref={directionalLightRef} position={[2, 16, 20]} intensity={1} castShadow />
             <SpotLight ref={SpotLightRef} position={[-0, 8, 2]}
             angle={Math.PI / 5}
             intensity={100}
