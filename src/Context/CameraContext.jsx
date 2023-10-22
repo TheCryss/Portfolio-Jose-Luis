@@ -14,8 +14,8 @@ export function useCameraToggleContext(){
 
 export function CameraProvider({children}){
     const [cameraState, setCameraState] = useState({
-        "position":[0, 4, 9],
-        "rotation":[0,0]
+        "position":[0, 8, 12],
+        "direction":[0,0,0]
     })
     return(
         <cameraContext.Provider value={cameraState}>

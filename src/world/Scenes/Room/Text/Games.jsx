@@ -6,23 +6,22 @@ import { useFrame } from "@react-three/fiber";
 import { MathUtils } from 'three'
 
 
-const Games = ({onClick}) => {
+const Games = ({onClick,text}) => {
 
     return (
-        <RigidBody colliders={"hull"}>
+
             <Text3D
-                position={[8, 0, -1]}
-                rotation-y={-Math.PI / 2}
+                position={[-3.3, 0, 8]}
+                rotation-x={-Math.PI / 2}
                 scale={1.2}
                 fontSize={0.6}
                 onClick={onClick}
                 font="/assets/fonts/Lilita_One_Regular.json" >
-                {`Games`}
+                {text}
                 
-                <meshNormalMaterial />
+                <meshStandardMaterial color={"skyblue"} />
 
             </Text3D>
-        </RigidBody>
     )
 }
 

@@ -10,12 +10,23 @@ const Floor = () => {
     aoMap: PATH + "marbleAO.jpg",
   });
   return (
+    <>
     <RigidBody colliders={"cuboid"} friction={2} type="fixed">
       <mesh position-y={-0.4} rotation-x={-Math.PI / 2} receiveShadow>
-        <planeGeometry  args={[32, 32]} />
-        <meshStandardMaterial  color={"#2596be"} />
+        <planeGeometry  args={[16, 32]} />
+        <meshStandardMaterial  color={"orange"}/>
       </mesh>
-    </RigidBody>
+      </RigidBody>
+      <mesh rotation-x={-Math.PI / 2} position-y={-0.39} receiveShadow >
+        <planeGeometry  args={[16, 0.8]}  />
+        <meshStandardMaterial/>
+
+      </mesh>
+      <mesh rotation-x={-Math.PI / 2} position-y={-0.38} receiveShadow >
+        <torusGeometry  args={[4, 0.3 , 2, 64 ]}  />
+        <meshStandardMaterial color={"white"}/>
+      </mesh>
+      </>
   );
 };
 
