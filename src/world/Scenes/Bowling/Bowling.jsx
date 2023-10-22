@@ -7,8 +7,9 @@ import Pins from './Models/Pins'
 const Bowling = () => {
   return (
     <>
-    <Floor></Floor>
-    <Pins scale={0.3} position={[16,0,-8]} rotation-y={Math.PI/2}/>
+    <Floor ></Floor>
+    <Pins scale={0.3} position={[16,0,-8]}  rotation-y={Math.PI/2}/>
+    <Bowling_Ball scale={0.54} position={[15.4,-0.5,5]} />
     </>
   )
 }

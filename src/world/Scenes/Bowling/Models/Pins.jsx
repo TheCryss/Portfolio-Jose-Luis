@@ -8,7 +8,7 @@ const Pins = (props) => {
     const { nodes, materials } = useGLTF("/assets/models/pins/pins.glb");
     return (
       
-      <group {...props} dispose={null}>
+      <group {...props}  dispose={null}>
         <RigidBody>
         <group position={[-9.177, 0.278, 0.411]} scale={0.188}>
           <mesh
